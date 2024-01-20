@@ -1,29 +1,29 @@
 import PropTypes from "prop-types";
 import React from 'react';
-import ReactVivus from 'react-vivus';
 import {Link} from "react-router-dom";
 
 const IconBox = ({ data, classOption }) => {
     return (
-        <div className={`icon-box text-center ${classOption}`}>
+        <div className="h-100">
+        <div className={`icon-box text-left ${classOption}`}>
+        
             <div className="icon">
-                <ReactVivus
-                    id={`servicesvg-${data.id}`}
-                    option={{
-                        file: data.icon,
-                        animTimingFunction: 'EASE',
-                            type: 'oneByOne',
-                            delay: 80
-                    }}
-                />
+                            <img
+                    src={data.icon}
+                    alt="Icon"
+                    className="img-fluid"
+                    style={{ height: "200px", width: "100%", objectFit: "cover" }}
+                    />
             </div>
+
             <div className="content">
-                <h3 className="title">{data.title}</h3>
+                <h3 className="title" dangerouslySetInnerHTML={{ __html: data.title }}></h3>
                 <div className="desc">
                     <p>{data.desc}</p>
                 </div>
                 <Link to={data.link} className="link">{data.pageLink}</Link>
             </div>
+        </div>
         </div>
     )
 }

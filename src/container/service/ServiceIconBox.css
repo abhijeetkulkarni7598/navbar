@@ -1,0 +1,17 @@
+.services-container {
+    padding:50px;
+    
+  }
+  .services-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    
+  }
+  
+  .service-col {
+    flex: 1;
+  }
+  
+  
+  

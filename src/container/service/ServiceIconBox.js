@@ -15,12 +15,14 @@ const ServiceIconBox = ({ classOption }) => {
                     marketing strategist"
                 />
 
-                <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 mb-n6">
 
-                    {IconBoxData && IconBoxData.slice(0, 3).map((single, key) => {
+                    {IconBoxData && IconBoxData.slice(0, 4).map((single, key) => {
                             return(
-                                <div key={key} className="col mb-6" data-aos="fade-up">
+                                <div key={key} className="col mb-6" data-aos="fade-up" >
+                                    <div className="h-100">
                                     <IconBox classOption="box-border" data={single} key={key} />
+                                    </div>
                                 </div>
                             ); 
                     })}

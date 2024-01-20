@@ -5,55 +5,29 @@
         "list": [
             {
             "id": 1,
-            "text": "Marketing",
+            "text": "Eduction Guidence",
             "url": "/"
             },
             {
             "id": 2,
-            "text": "SEO/SEM",
+            "text": "Career Guidence",
             "url": "/"
             },
             {
             "id": 3,
-            "text": "Development",
+            "text": "Micro Business Guidence",
             "url": "/"
             },
             {
             "id": 4,
-            "text": "UX Design",
+            "text": "Spiritual guidance",
             "url": "/"
             }
         ]
     },
+           
     {
         "id": 2,
-        "title": "Products",
-        "list": [
-            {
-            "id": 1,
-            "text": "Elementor Guru",
-            "url": "/"
-            },
-            {
-            "id": 2,
-            "text": "WooLentor Pro",
-            "url": "/"
-            },
-            {
-            "id": 3,
-            "text": "Plugins",
-            "badge": "New",
-            "url": "/"
-            },
-            {
-            "id": 4,
-            "text": "Page Builder",
-            "url": "/"
-            }
-        ]
-    },
-    {
-        "id": 3,
         "title": "About",
         "list": [
             {
@@ -79,7 +53,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "Contact",
         "list": [
             {

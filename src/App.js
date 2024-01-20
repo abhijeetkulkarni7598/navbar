@@ -15,6 +15,13 @@ const BlogDetails = lazy(() => import("./pages/BlogDetails"));
 const BlogCategories = lazy(() => import("./pages/BlogCategories"));
 const BlogTag = lazy(() => import("./pages/BlogTag"));
 const Contact = lazy(() => import("./pages/Contact"));
+const EducationService = lazy(() => import("./pages/EducationService"));
+const CareerService = lazy(() => import("./pages/CareerService"));
+const MicroService = lazy(() => import("./pages/MicroService"));
+const SpiritualService = lazy(() => import("./pages/SpiritualService"));
+const Signup = lazy(() => import("./pages/Signup"));
+
+
 
 
 function App() {
@@ -47,6 +54,11 @@ function App() {
                   <Route path={`${process.env.PUBLIC_URL + "/category/:slug"}`} element={<BlogCategories/>} />
                   <Route path={`${process.env.PUBLIC_URL + "/blog-details/:id"}`}element={<BlogDetails/>} />
                   <Route path={`${process.env.PUBLIC_URL + "/contact"}`} element={<Contact/>} />
+                  <Route path={`${process.env.PUBLIC_URL + "/EducationService"}`} element={<EducationService/>} />
+                  <Route path={`${process.env.PUBLIC_URL + "/CareerService"}`} element={<CareerService/>} />
+                  <Route path={`${process.env.PUBLIC_URL + "/MicroService"}`} element={<MicroService/>} />
+                  <Route path={`${process.env.PUBLIC_URL + "/SpiritualService"}`} element={<SpiritualService/>} />
+                  <Route path={`${process.env.PUBLIC_URL + "/Signup"}`} element={<Signup/>} />
                 </Routes>
             </Suspense>
         </NavScrollTop>
