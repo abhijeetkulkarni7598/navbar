@@ -5,7 +5,7 @@
         "title": "Education <br/> Guidence",
         "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
         "pageLink": "Learn More",
-        "link": "service"
+        "link": "/EducationService"
     },
     {
         "id": "2",
@@ -13,7 +13,7 @@
         "title": "Career<br/>Guidence",
         "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
         "pageLink": "Learn More",
-        "link": "service"
+        "link": "/CareerService"
     },
     {
         "id": "3",
@@ -21,7 +21,7 @@
         "title": "Micro Business <br/> Guidence",
         "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
         "pageLink": "Learn More",
-        "link": "service"
+        "link": "/MicroService"
     },
     {
         "id": "4",
@@ -29,7 +29,7 @@
         "title": "Spiritual <br/>  Guidence",
         "desc": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
         "pageLink": "Learn More",
-        "link": "service"
+        "link": "/SpiritualService"
     }
 
     

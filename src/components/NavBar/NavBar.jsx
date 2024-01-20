@@ -1,7 +1,13 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import {NavLink} from 'react-router-dom';
+import { logout } from '../../store/mutation/userSlice';
 
 const NavBar = () => {
+    const { user, userToken, loading, checkAuthLoading ,isAuthenticated} = useSelector(
+        (state) => state.user
+      );
+      const dispatch=useDispatch()
     return (
         <nav className="site-main-menu">
             <ul>
@@ -24,6 +30,12 @@ const NavBar = () => {
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/contact"}><span className="menu-text">Contact Us</span></NavLink>
                 </li>
+                {user?
+
+<li>
+                    <NavLink onClick={()=>dispatch(logout())}><span className="menu-text">Logout </span></NavLink>
+                </li>:null
+                }
             </ul>
         </nav>
     )

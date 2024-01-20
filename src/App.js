@@ -2,6 +2,13 @@ import {useEffect,  Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import NavScrollTop from './components/NavScrollTop';
+import { useDispatch } from "react-redux";
+import { checkAuth, getUser } from "./store/mutation/userSlice";
+import AuthServices from "./store/AuthServices";
+import AuthServicesEducation from "./store/auth/AuthServicesEducation";
+import AuthServicesCareer from "./store/auth/AuthServicesCareer";
+import AuthMicro from "./store/auth/AuthMicro";
+import AuthSpritual from "./store/auth/AuthSpritual";
 const HomeOne = lazy(() => import("./pages/HomeOne"));
 const HomeTwo = lazy(() => import("./pages/HomeTwo"));
 const HomeThree = lazy(() => import("./pages/HomeThree"));
@@ -35,30 +42,55 @@ function App() {
     AOS.refresh();
     
   }, [])
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getUser());
+  }, []);
   return (
       <Router>
         <NavScrollTop>
           <Suspense fallback={<div />}>
                 <Routes>
-                  <Route path={`${process.env.PUBLIC_URL + "/"}`} element={<HomeOne/>}/>
-                  <Route path={`${process.env.PUBLIC_URL + "/home-one"}`} element={<HomeOne/>}/>
-                  <Route path={`${process.env.PUBLIC_URL + "/home-two"}`} element={<HomeTwo/>}/>
-                  <Route path={`${process.env.PUBLIC_URL + "/home-three"}`} element={<HomeThree/>}/>
-                  <Route path={`${process.env.PUBLIC_URL + "/about"}`} element={<About/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/service"}`} element={<Service/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/work"}`} element={<Work/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/work-details/:id"}`} element={<WorkDetails/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/blog-grid"}`} element={<BlogGrid/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/blog-classic"}`} element={<BlogClassic/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/tag/:slug"}`} element={<BlogTag/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/category/:slug"}`} element={<BlogCategories/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/blog-details/:id"}`}element={<BlogDetails/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/contact"}`} element={<Contact/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/EducationService"}`} element={<EducationService/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/CareerService"}`} element={<CareerService/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/MicroService"}`} element={<MicroService/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/SpiritualService"}`} element={<SpiritualService/>} />
-                  <Route path={`${process.env.PUBLIC_URL + "/Signup"}`} element={<Signup/>} />
+                  <Route path={`${"/"}`} element={<HomeOne/>}/>
+                  <Route path={`${"/home-one"}`} element={<HomeOne/>}/>
+                  <Route path={`${"/home-two"}`} element={<HomeTwo/>}/>
+                  <Route path={`${"/home-three"}`} element={<HomeThree/>}/>
+                  <Route path={`${"/about"}`} element={<About/>} />
+                  <Route path={`${"/service"}`} element={<Service/>} />
+                  <Route path={`${"/work"}`} element={<Work/>} />
+                  <Route path={`${"/work-details/:id"}`} element={<WorkDetails/>} />
+                  <Route path={`${"/blog-grid"}`} element={<BlogGrid/>} />
+                  <Route path={`${"/blog-classic"}`} element={<BlogClassic/>} />
+                  <Route path={`${"/tag/:slug"}`} element={<BlogTag/>} />
+                  <Route path={`${"/category/:slug"}`} element={<BlogCategories/>} />
+                  <Route path={`${"/blog-details/:id"}`}element={<BlogDetails/>} />
+                  <Route path={`${"/contact"}`} element={<Contact/>} />
+                  <Route path={`${"/EducationService"}`} element={
+                  <AuthServicesEducation>
+
+                  <EducationService/>
+                  </AuthServicesEducation>
+                  } />
+                  <Route path={`${"/CareerService"}`} element={
+                  <AuthServicesCareer>
+
+                  <CareerService/>
+                  </AuthServicesCareer>
+                  } />
+                  <Route path={`${"/MicroService"}`} element={
+                  <AuthMicro>
+
+                  <MicroService/>
+                  </AuthMicro>
+                  } />
+                  <Route path={`${"/SpiritualService"}`} element={
+                  <AuthSpritual>
+
+                    <SpiritualService/>
+                  </AuthSpritual>
+                  } />
+                  <Route path={`${"/Signup"}`} element={<Signup/>} />
                 </Routes>
             </Suspense>
         </NavScrollTop>

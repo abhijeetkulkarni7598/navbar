@@ -5,8 +5,12 @@ import HeaderSearch from '../../components/HeaderSearch/HeaderSearch';
 import Btn from '../../components/Btn/Btn';
 import MobileMenu from "../../components/NavBar/MobileMenu"
 import MainSearch from "../../components/NavBar/MainSearch"
+import { useSelector } from "react-redux";
 
 const Header = () => {
+    const { user, userToken, loading, checkAuthLoading, isAuthenticated } =
+    useSelector((state) => state.user);
+
     const [ofcanvasShow, setOffcanvasShow] = useState(false);
     const onCanvasHandler = () => {
         setOffcanvasShow(prev => !prev);
@@ -62,7 +66,10 @@ const Header = () => {
                             </div>
 
                             <div className="col-xl-2 col d-none d-sm-flex justify-content-end order-1 order-xl-2">
+                                {user?.id?<div className="btn btn-light btn-hover-primary">Logged In As : {user.username}</div>:
+
                                 <Btn name='Signin/register' />
+                                }
                             </div>
                         </div>
                     </div>
