@@ -39,20 +39,20 @@ const ContactFrom = () => {
                     <div className="col-md-12 col-12 mb-6">
                         <input 
                             type="text" 
-                            placeholder="Subject *" 
-                            name="subject" 
-                            {...register("subject", {
-                                required: "Subject is required",
+                            placeholder="Mobile no. *" 
+                            name="mobile" 
+                            {...register("mobile", {
+                                required: "mobile is required",
                             })}
                         />
                         {errors?.subject && <p>{errors.subject?.message}</p>}
                     </div>
                     <div className="col-12 mb-6">
                         <textarea 
-                            name="message" 
-                            placeholder="Message" 
-                            {...register("message", {
-                                required: "Message is required",
+                            name="query" 
+                            placeholder="Query" 
+                            {...register("query", {
+                                required: "Query is required",
                             })}
                         ></textarea>
                         {errors?.message && <p>{errors.message?.message}</p>}

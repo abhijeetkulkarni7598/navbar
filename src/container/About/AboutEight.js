@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import Parallax from 'parallax-js';
 
-const AboutFive = () => {
+const AboutEight = () => {
     const [scale] = useState(1.04);
     const sceneEl = useRef(null);
 
@@ -47,12 +47,13 @@ const AboutFive = () => {
                     <div className="col-xl-5 col-lg-6 col-12" data-aos="fade-up" data-aos-delay="300">
                         <div className="about-content-area">
                             <SectionTitleTwo 
-                                subTitle="AumBeeCo … Empowering Futures…!!!"
+                                subTitle="Fostering Positive Change and Innovation"
 
-                                title="We've Collaborated with Numerous Brands and Startups"
+                                title="AumBeeCo is an inspirational path which shows goals and dreams and tells how today we can achieve our vision of a better life…"
                             />
 
-                            <p>Welcome to AumBeeCo, where expertise meets innovation. We are not just consultants; we are partners on your journey to success, providing tailored solutions to meet the unique challenges and opportunities that each phase of your professional or entrepreneurial path presents.
+                            <p>We envision world where innovation is embraced, challenges are opportunities, and success is measured not only by financial achievements but also by the positive impact on the broader community. AumBeeCo strives to be the catalyst for positive change, fostering a community of success stories that ripple through the professional and entrepreneurial landscape.
+
 </p>
 
                             <Link className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/"}>Get Started</Link>
@@ -66,4 +67,4 @@ const AboutFive = () => {
     )
 }
 
-export default AboutFive;
+export default AboutEight;

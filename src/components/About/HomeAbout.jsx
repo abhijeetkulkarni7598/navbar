@@ -24,9 +24,8 @@ const HomeAbout = () => {
             <div className="container">
 
                 <SectionTitle
-                    title="We are a full-service creative agency"
-                    subTitle="Our team of designers, developers and creatives are perfectionists
-                    who love what they do and love"
+                    title="Innovative Partners for Your Success"
+                    subTitle="Empowering Futures through Tailored Solutions at AumBeeCo"
                 />
 
                 <div className="row">
@@ -55,12 +54,11 @@ const HomeAbout = () => {
                     <div className="col-xl-5 col-lg-6 col-12" data-aos="fade-up" data-aos-delay="300">
                         <div className="about-content-area">
                             <SectionTitleTwo 
-                                subTitle="Every day brings new challenges"
-                                title="Creative agency focused on vision, product and people"
+                                subTitle="Embracing Daily Challenges for Growth"
+                                title="A Creative Agency Committed to Vision, Product, and People"
                             />
 
-                            <p>We’re boldly individual, always original and refreshingly easy-going. Our vision, passion and ideas are matched
-                                with focus, expertise and flair.</p>
+                            <p>Welcome to AumBeeCo, where expertise meets innovation. We are not just consultants; we are partners on your journey to success, providing tailored solutions to meet the unique challenges and opportunities that each phase of your professional or entrepreneurial path presents..</p>
 
                             <Link className="btn btn-primary btn-hover-secondary mt-xl-8 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/about"}>About Us</Link>
                         </div>

@@ -32,8 +32,8 @@ const AboutFour = () => {
                     <div className="col-xl-6 col-lg-6 col-12" data-aos="fade-up">
                         <div className="about-content-area mt-0 mb-md-10 mb-10">
                             <SectionTitleTwo 
-                                subTitle="Web design and digital marketing"
-                                title="We think strategy, UX design, and web development"
+                                subTitle="AumBeeCo: Shaping Tomorrow’s Solutions Today"
+                                title="AumBeeCo: Crafting Strategy, Elevating UX Design, and Pioneering Web Development"
                             />
 
                             <div className="row row-cols-sm-2 row-cols-auto mb-n6">

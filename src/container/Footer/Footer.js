@@ -21,8 +21,8 @@ const Footer = () => {
                                 <div className="content">
 
 
-                                    <p><Link to={process.env.PUBLIC_URL + "/"}>(+1) 212-946-2701</Link></p>
-                                    <p><Link to={process.env.PUBLIC_URL + "/"}>hello@hasagency.com</Link> </p>
+                                    <p><Link to={process.env.PUBLIC_URL + "/"}>(+91) 9821533321</Link></p>
+                                    <p><Link to={process.env.PUBLIC_URL + "/"}>info@AumBeeCo.com</Link> </p>
                                 </div>
                                 <div className="footer-social-inline">
                                     <a href="#"><i className="fab fa-twitter-square"></i></a>

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import Parallax from 'parallax-js';
 
-const AboutFive = () => {
+const AboutSeven = () => {
     const [scale] = useState(1.04);
     const sceneEl = useRef(null);
 
@@ -23,6 +23,22 @@ const AboutFive = () => {
             <div className="container">
 
                 <div className="row">
+
+                <div className="col-xl-5 col-lg-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                        <div className="about-content-area">
+                            <SectionTitleTwo 
+                                subTitle="Empowering Growth Through Strategic Support"
+                                title="Our mission is rooted in the belief that every journey begins with the right guidance and strategic support…"
+                            />
+
+                            <p>At AumBeeCo, our mission is to empower you with the knowledge and tools to unlock your full potential and to achieve sustainable growth. We are committed to guiding & support our you in your early stages & assisting you establish for scaling up in a more professional way. 
+
+                             </p>
+
+                            <Link className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/"}>Get Started</Link>
+                        </div>
+                    </div>
+
 
                     <div className="col-xl-7 col-lg-6 col-12" data-aos="fade-up">
                         <div className="about-image-area">
@@ -44,21 +60,6 @@ const AboutFive = () => {
                         </div>
                     </div>
 
-                    <div className="col-xl-5 col-lg-6 col-12" data-aos="fade-up" data-aos-delay="300">
-                        <div className="about-content-area">
-                            <SectionTitleTwo 
-                                subTitle="AumBeeCo … Empowering Futures…!!!"
-
-                                title="We've Collaborated with Numerous Brands and Startups"
-                            />
-
-                            <p>Welcome to AumBeeCo, where expertise meets innovation. We are not just consultants; we are partners on your journey to success, providing tailored solutions to meet the unique challenges and opportunities that each phase of your professional or entrepreneurial path presents.
-</p>
-
-                            <Link className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/"}>Get Started</Link>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -66,4 +67,4 @@ const AboutFive = () => {
     )
 }
 
-export default AboutFive;
+export default AboutSeven;
