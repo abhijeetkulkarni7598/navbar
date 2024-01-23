@@ -24,7 +24,7 @@ const Header = () => {
 
     useEffect(() => {
         const header = document.querySelector(".header-section");
-        setHeaderTop(header.offsetTop);
+        setHeaderTop(-1);
         window.addEventListener("scroll", handleScroll);
         return () => {
         window.removeEventListener("scroll", handleScroll);
@@ -37,8 +37,8 @@ const Header = () => {
     return (
         <Fragment>
             <div className={`header-section header-transparent sticky-header section ${
-        scroll > headerTop ? "is-sticky" : ""
-      }`}>
+    scroll > headerTop ? "is-sticky" : ""
+}`} >
                 <div className="header-inner">
                     <div className="container position-relative">
                         <div className="row justify-content-between align-items-center">

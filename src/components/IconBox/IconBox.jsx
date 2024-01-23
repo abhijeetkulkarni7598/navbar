@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const IconBox = ({ data, classOption }) => {
     return (
-        <div className="h-100">
+        <div className="h-100" >
         <div className={`icon-box text-left ${classOption}`}>
         
             <div className="icon">
@@ -12,15 +12,12 @@ const IconBox = ({ data, classOption }) => {
                     src={data.icon}
                     alt="Icon"
                     className="img-fluid"
-                    style={{ height: "200px", width: "100%", objectFit: "cover" }}
+                    style={{ height: "200px", width: "100%", objectFit: "cover", borderRadius:"10px"}}
                     />
             </div>
 
             <div className="content">
                 <h3 className="title" dangerouslySetInnerHTML={{ __html: data.title }}></h3>
-                <div className="desc">
-                    <p>{data.desc}</p>
-                </div>
                 <Link to={data.link} className="link">{data.pageLink}</Link>
             </div>
         </div>

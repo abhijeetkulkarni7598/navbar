@@ -22,15 +22,13 @@ const AboutUs = () => {
             <Header />
             <Breadcrumb 
                 image="images/bg/breadcrumb-bg.jpg"
-                title="We are an agency located in India"
+                title="We are an team located in India"
                 content="Home"
                 contentTwo="About Us"
             />
-            <AboutFour />
             <AboutFive />
             <AboutSeven />
             <AboutEight />
-            <CallToActionTwo />
             <Footer />
             <ScrollToTop />
         </React.Fragment>

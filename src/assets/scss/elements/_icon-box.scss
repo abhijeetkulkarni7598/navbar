@@ -4,10 +4,10 @@
     position: relative;
     display: block;
 
-    padding: 50px 60px;
+    padding: 10px 20px;
 
     transition: var(--transition);
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 99;
     background-color: var(--clr-white);
     &.box-border{

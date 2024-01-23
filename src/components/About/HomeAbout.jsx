@@ -55,7 +55,7 @@ const HomeAbout = () => {
                         <div className="about-content-area">
                             <SectionTitleTwo 
                                 subTitle="Embracing Daily Challenges for Growth"
-                                title="A Creative Agency Committed to Vision, Product, and People"
+                                title="AumBeeCo Committed to Empowering Futures through Vision, Product, and People."
                             />
 
                             <p>Welcome to AumBeeCo, where expertise meets innovation. We are not just consultants; we are partners on your journey to success, providing tailored solutions to meet the unique challenges and opportunities that each phase of your professional or entrepreneurial path presents..</p>
