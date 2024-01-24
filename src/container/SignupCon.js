@@ -57,7 +57,7 @@ if(user&&isAuthenticated){
           initialValues={datas}
           className="container"
           style={{
-            width: "600px",
+            width: "80%",
             backgroundColor: "rgb(28,27,27)",
             padding: "20px",
             color: "white",
@@ -136,7 +136,7 @@ if(user&&isAuthenticated){
         </div>
       )} */}
 
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between" style={{width:"80%"}}>
             <Button
               type="primary"
               htmlType="submit"
@@ -148,7 +148,7 @@ if(user&&isAuthenticated){
               className={"btn btn-secondary"}
               onClick={() => setAction(!action)}
             >
-              {action ? <>Dont Have Account Account</> : <>Have Account</>}
+              {action ? <>Dont Have Account</> : <>Have Account</>}
             </div>
           </div>
         </Form>
