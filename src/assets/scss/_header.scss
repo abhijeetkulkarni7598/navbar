@@ -36,7 +36,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: #030e22 !important;
+            background-color: white !important;
             width: 100%;
             height: 80px;
             animation: headerSlideDown 0.95s ease forwards;
@@ -131,7 +131,7 @@
 
         padding: 6px 5px;
 
-        color: var(--clr-white);
+        color: var(--clr-black);
 
         & i {
             font-size: 26px;

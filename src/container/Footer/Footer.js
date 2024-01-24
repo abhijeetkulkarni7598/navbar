@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import Logo from '../../components/logo/Logo';
 import FooterData from '../../data/Footer/footerItem.json';
 import FooterLinkItem from '../../components/Footer/FooterLinkItem.jsx';
@@ -18,12 +17,7 @@ const Footer = () => {
                                 />
                             </div>
                             <div className="footer-widget-content">
-                                <div className="content">
-
-
-                                    <p><Link to={process.env.PUBLIC_URL + "/"}>(+91) 9821533321</Link></p>
-                                    <p><Link to={process.env.PUBLIC_URL + "/"}>info@AumBeeCo.com</Link> </p>
-                                </div>
+                               
                                 <div className="footer-social-inline">
                                     <a href="#"><i className="fab fa-twitter-square"></i></a>
                                     <a href="#"><i className="fab fa-facebook-square"></i></a>
@@ -46,7 +40,7 @@ const Footer = () => {
 
                 <div className="row">
                     <div className="col">
-                        <p className="copyright">&copy; {new Date().getFullYear()} <strong>AumBee</strong> Made with <i className="fas fa-heart text-danger"></i> by <a href="#"><strong>HasThemes</strong></a>.</p>
+                        <p className="copyright">&copy; {new Date().getFullYear()} <strong>AumBee</strong> All Rights Reserved.</p>
                     </div>
                 </div>
 

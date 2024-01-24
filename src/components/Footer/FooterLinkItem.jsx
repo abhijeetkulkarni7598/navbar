@@ -10,7 +10,9 @@ const FooterLinkItem = ({data}) => {
                 <ul>
                     {data.list.map((single,key) =>(
                         <li key={key}>
-                            <Link to={single.url}>{single.text} {single?.badge && <span className="ft-badge">{single.badge}</span>} </Link>
+                            <Link to={single.url}>
+                                {single.icon && <span dangerouslySetInnerHTML={{ __html: single.icon }}></span>}<span style={{paddingRight:"5px"}}>    </span>
+                                {single.text} {single?.badge && <span className="ft-badge">{single.badge}</span>} </Link>
                         </li>
                     ))}
                     

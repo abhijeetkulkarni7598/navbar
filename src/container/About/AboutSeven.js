@@ -1,6 +1,5 @@
 import {useState, useEffect, useRef} from "react";
 import SectionTitleTwo from '../../components/SectionTitles/SectionTitleTwo';
-import {Link} from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import Parallax from 'parallax-js';
 
@@ -35,7 +34,6 @@ const AboutSeven = () => {
 
                              </p>
 
-                            <Link className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/"}>Get Started</Link>
                         </div>
                     </div>
 

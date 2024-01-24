@@ -6,49 +6,49 @@
             {
             "id": 1,
             "text": "Eduction Guidence",
-            "url": "/"
+            "url": "/EducationService"
             },
             {
             "id": 2,
             "text": "Career Guidence",
-            "url": "/"
+            "url": "/CareerService"
             },
             {
             "id": 3,
             "text": "Micro Business Guidence",
-            "url": "/"
+            "url": "/MicroService"
             },
             {
             "id": 4,
             "text": "Spiritual guidance",
-            "url": "/"
+            "url": "/SpiritualService"
             }
         ]
     },
            
     {
         "id": 2,
-        "title": "About",
+        "title": "links",
         "list": [
             {
             "id": 1,
-            "text": "Features",
-            "url": "/"
+            "text": "Home",
+            "url": "/home-one"
             },
             {
             "id": 2,
-            "text": "Our Partners",
-            "url": "/"
+            "text": "About Us",
+            "url": "/about"
             },
             {
             "id": 3,
-            "text": "Affiliate Program",
-            "url": "/"
+            "text": "Contact Us",
+            "url": "/contact"
             },
             {
             "id": 4,
-            "text": "Pricing",
-            "url": "/"
+            "text": "SignUp",
+            "url": "/Signup"
             }
         ]
     },
@@ -58,24 +58,17 @@
         "list": [
             {
             "id": 1,
-            "text": "Support Ticket",
+            "text": "(+91)9821533321",
+            "icon":"<i class='fas fa-phone'></i>",
             "url": "/"
             },
             {
             "id": 2,
-            "text": "Help Desk",
-            "url": "/"
-            },
-            {
-            "id": 3,
-            "text": "Live Chat",
-            "url": "/"
-            },
-            {
-            "id": 4,
-            "text": "FAQs",
+            "text": "info@AumBeeCo.com",
+            "icon":"<i class='fas fa-envelope'></i>",
             "url": "/"
             }
+            
         ]
     }
 ]

@@ -9,6 +9,26 @@ import SignupCon from '../container/SignupCon';
 
 const Signup = () => {
 
+  const styles = {
+    container: {
+      textAlign: "center",
+      paddingTop: "10px",
+    },
+    
+    // Responsive styles
+    '@media (max-width: 768px)': {
+      container: {
+        paddingTop: '8px',
+      },
+    },
+  
+    '@media (max-width: 576px)': {
+      container: {
+        paddingTop: '5px',
+      },
+    },
+  };
+
   return (
     <React.Fragment>
             <SEO title="AumBeeCo || Signup" />
@@ -19,7 +39,7 @@ const Signup = () => {
                 content="Home"
                 contentTwo="SignUp/Register"
             />
-            <div style={{itemAlign:"center",paddingTop:"28%"}}>             
+            <div style={styles.container}>             
             <SignupCon /> 
             </div> <br/>   
             <Footer />

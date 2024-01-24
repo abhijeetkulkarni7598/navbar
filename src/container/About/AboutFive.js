@@ -1,6 +1,5 @@
 import {useState, useEffect, useRef} from "react";
 import SectionTitleTwo from '../../components/SectionTitles/SectionTitleTwo';
-import {Link} from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import Parallax from 'parallax-js';
 
@@ -49,13 +48,12 @@ const AboutFive = () => {
                             <SectionTitleTwo 
                                 subTitle="AumBeeCo … Empowering Futures…!!!"
 
-                                title="We've Collaborated with Numerous Brands and Startups"
+                                title="AumBeeCo, where expertise meets innovation"
                             />
 
                             <p>Welcome to AumBeeCo, where expertise meets innovation. We are not just consultants; we are partners on your journey to success, providing tailored solutions to meet the unique challenges and opportunities that each phase of your professional or entrepreneurial path presents.
 </p>
 
-                            <Link className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4" to={process.env.PUBLIC_URL + "/"}>Get Started</Link>
                         </div>
                     </div>
 
