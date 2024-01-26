@@ -39,36 +39,20 @@ const MobileNavMenu = () => {
     return (
         <nav className="site-mobile-menu">
             <ul>
-                <li className="has-children">
-                    <NavLink to={process.env.PUBLIC_URL + "/"}><span className="menu-text">Homepage</span></NavLink>
-                    <span className="menu-toggle" onClick={onClickHandler}><i className="icon fa fa-angle-down"></i></span>
-                    <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/home-one"}><span className="menu-text">Home One</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/home-two"}><span className="menu-text">Home Two</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/home-three"}><span className="menu-text">Home Three</span></NavLink></li>
-                    </ul>
+                <li>
+                    <NavLink to={process.env.PUBLIC_URL + "/"}><span className="menu-text">Home</span></NavLink>
                 </li>
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/about"}><span className="menu-text">About Us</span></NavLink>
                 </li>
-                <li>
-                    <NavLink to={process.env.PUBLIC_URL + "/service"}><span className="menu-text">Services</span></NavLink>
-                </li>
-                <li className="has-children">
-                    <NavLink to={process.env.PUBLIC_URL + "/work"}><span className="menu-text">Work</span></NavLink>
-                    <span className="menu-toggle" onClick={onClickHandler}><i className="far fa-angle-down"></i></span>
+                <li className="has-childern">
+                    <NavLink><span className="menu-text">Services</span></NavLink>
+                    <span className="menu-toggle" onClick={onClickHandler}><i className="icon fa fa-angle-down"></i></span>
                     <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/work"}><span className="menu-text">Work</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + `/work-details/1`}><span className="menu-text">Work Details</span></NavLink></li>
-                    </ul>
-                </li>
-                <li className="has-children">
-                    <NavLink to={process.env.PUBLIC_URL + "/blog-grid"}><span className="menu-text">Blog</span></NavLink>
-                    <span className="menu-toggle" onClick={onClickHandler}><i className="far fa-angle-down"></i></span>
-                    <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/blog-grid"}><span className="menu-text">Blog Grid</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/blog-classic"}><span className="menu-text">Blog Classic</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + `/blog-details/1`}><span className="menu-text">Blog Details</span></NavLink></li>
+                    <li><NavLink to={process.env.PUBLIC_URL + "/EducationService"}><span className="menu-text">Eduction Guidence</span></NavLink></li>
+                        <li><NavLink to={process.env.PUBLIC_URL + "/CareerService"}><span className="menu-text">Career Guidence</span></NavLink></li>
+                        <li><NavLink to={process.env.PUBLIC_URL + "/MicroService"}><span className="menu-text">Micro Business Guidence</span></NavLink></li>
+                        <li><NavLink to={process.env.PUBLIC_URL + "/SpiritualService"}><span className="menu-text">Spiritual Guidence</span></NavLink></li>
                     </ul>
                 </li>
                 <li>
