@@ -59,9 +59,13 @@ if(user&&isAuthenticated){
           style={{
             backgroundColor: "rgb(28,27,27)",
             width:"80%",
+            maxWidth:"500px",
+            alignItems:"center",
             padding: "20px",
             color: "white",
             borderRadius: "20px",
+            
+           
           }}
         >
           <div className="d-flex flex-column align-items-center">
@@ -152,7 +156,7 @@ if(user&&isAuthenticated){
             </div>
           </div>
         </Form>
-      )}
+     )}
     </>
   );
 };
