@@ -58,6 +58,9 @@ const MobileNavMenu = () => {
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/contact"}><span className="menu-text">Contact Us</span></NavLink>
                 </li>
+                <li>
+                    <NavLink to={process.env.PUBLIC_URL + "/Signup"}><span className="menu-text">Sign In/ Register</span></NavLink>
+                </li>
             </ul>
         </nav>
     )

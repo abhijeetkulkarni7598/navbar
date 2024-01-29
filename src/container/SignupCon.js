@@ -58,7 +58,7 @@ if(user&&isAuthenticated){
           className="container"
           style={{
             backgroundColor: "rgb(28,27,27)",
-            width:"80%",
+            width:"95%",
             maxWidth:"500px",
             alignItems:"center",
             padding: "20px",
