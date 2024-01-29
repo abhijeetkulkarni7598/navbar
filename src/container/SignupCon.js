@@ -14,7 +14,7 @@ const onFinish = (data, dispatch, createUser) => {
 };
 const layout = {
   labelCol: { span: 5 },
-  wrapperCol: { span: 20 },
+  wrapperCol: { span: 24 },
 };
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -44,7 +44,7 @@ if(user&&isAuthenticated){
   return (
     <>
       {loading ? (
-        <div style={{ height: "300px" }}>Loading</div>
+        <div style={{ height: "300px"}}>Loading</div>
       ) : (
         <Form
           form={form}
@@ -57,18 +57,18 @@ if(user&&isAuthenticated){
           initialValues={datas}
           className="container"
           style={{
-            width: "80%",
             backgroundColor: "rgb(28,27,27)",
+            width:"80%",
             padding: "20px",
             color: "white",
             borderRadius: "20px",
           }}
         >
           <div className="d-flex flex-column align-items-center">
-            <div className="h4">{action === "Login" ? "Login" : "Sign Up"}</div>
+            <div className="h4" style={{color:"white"}}>{action === "Login" ? "Login" : "Sign Up"}</div>
             <div className="underline"></div>
           </div>
-          <div className="inputs">
+          <div>
             {action ? (
               <div></div>
             ) : (
@@ -136,7 +136,7 @@ if(user&&isAuthenticated){
         </div>
       )} */}
 
-          <div className="d-flex justify-content-between" style={{width:"80%"}}>
+          <div className="d-flex justify-content-between">
             <Button
               type="primary"
               htmlType="submit"
