@@ -18,7 +18,7 @@ function AuthMicro({ children }) {
         Loading1
       </h1>
     );
-    if (loading) return <p>loafding</p>;
+    if (loading) return <p>loading</p>;
 
 
     if ( !userToken||isAuthenticated===false) {

@@ -21,7 +21,7 @@ const HomeOne = () => {
             <Header />
             <IntroSlider />
             <HomeAbout />
-            <ServiceIconBox classOption="bg-color-1" />
+            <ServiceIconBox classOption="" />
             <ContactInformation />
             <Footer />
             <ScrollToTop />

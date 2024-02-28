@@ -3,18 +3,18 @@
         "id": "1",
         "title": "varius morbi enim nunc faucibus",
         "desc": "dolor sit amet consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non enim praesent.",
-        "backgroundImage": "/images/hero-image/hero-2.jpg"
+        "backgroundImage": "/images/hero-image/1.png"
     },
     {
         "id": "2",
         "title": "varius morbi enim nunc faucibus",
         "desc": "dolor sit amet consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non enim praesent.",
-        "backgroundImage": "/images/hero-image/hero-1.jpg"
+        "backgroundImage": "/images/hero-image/2.png"
     },
     {
         "id": "3",
         "title": "varius morbi enim nunc faucibus",
         "desc": "dolor sit amet consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non enim praesent.",
-        "backgroundImage": "/images/hero-image/hero-3.jpg"
+        "backgroundImage": "/images/hero-image/3.png"
     }
 ]

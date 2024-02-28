@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { message } from "antd";
 import axios from "axios";
 // import url from "./url"
-const url = "http://127.0.0.1:8000/";
+const url = "https://www.aumbeeco.com/";
 
 export const userLogin = createAsyncThunk(
   "user/login",
