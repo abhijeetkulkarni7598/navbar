@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className="footer-widget">
                             <div className="footer-logo">
                                 <Logo 
-                                    image={`${process.env.PUBLIC_URL}/images/logo/logo.svg`}
+                                    image={`${process.env.PUBLIC_URL}/images/logo/logo-white-01.svg`}
                                 />
                             </div>
                             <div className="footer-widget-content">
