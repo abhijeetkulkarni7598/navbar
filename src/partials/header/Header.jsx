@@ -1,7 +1,6 @@
 import {Fragment, useState, useEffect} from "react";
 import Logo from '../../components/logo/Logo';
 import NavBar from '../../components/NavBar/NavBar';
-import HeaderSearch from '../../components/HeaderSearch/HeaderSearch';
 import Btn from '../../components/Btn/Btn';
 import MobileMenu from "../../components/NavBar/MobileMenu"
 import MainSearch from "../../components/NavBar/MainSearch"
@@ -47,14 +46,11 @@ const Header = () => {
                                     image={`${process.env.PUBLIC_URL}/images/logo/logo.svg`}
                                 />
                             </div>
-                            <div className="col-auto col-xl d-flex align-items-center justify-content-xl-center justify-content-end order-2 order-xl-1">
+                            <div className="col-auto col-xl d-flex align-items-center justify-content-between justify-content-end order-2 order-xl-1">
                                 <div className="menu-column-area d-none d-xl-block position-static">
                                     <NavBar />
                                 </div>
-                                <div className="header-search-area ms-xl-7 ms-0">
-
-                                    <HeaderSearch onClick={onSearchHandler}/>
-                                </div>
+                                
 
                                 <div className="header-mobile-menu-toggle d-xl-none ms-sm-2">
                                     <button type="button" className="toggle" onClick={onCanvasHandler}>
@@ -68,8 +64,11 @@ const Header = () => {
                             <div className="col-xl-2 col d-none d-sm-flex justify-content-end order-1 order-xl-2">
                                 {user?.id?<div className="btn btn-light btn-hover-primary">Logged In As : {user.username}</div>:
 
-                                <Btn name='Signin/register' />
+                                <Btn name='Log In' />
                                 }
+
+                                <Btn name='Register' />
+
                             </div>
                         </div>
                     </div>

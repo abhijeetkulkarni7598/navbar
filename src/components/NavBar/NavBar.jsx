@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {NavLink} from 'react-router-dom';
 import { logout } from '../../store/mutation/userSlice';
+import './Navbar.css';
 
 const NavBar = () => {
     const { user, userToken, loading, checkAuthLoading ,isAuthenticated} = useSelector(
@@ -20,12 +21,36 @@ const NavBar = () => {
                 <li className="has-children">
                     <NavLink ><span className="menu-text">Services</span></NavLink>
                     <span className="menu-toggle"><i className="far fa-angle-down"></i></span>
-                    <ul className="sub-menu">
-                        <li><NavLink to={process.env.PUBLIC_URL + "/EducationService"}><span className="menu-text">Eduction Guidence</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/CareerService"}><span className="menu-text">Career Guidence</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/MicroService"}><span className="menu-text">Micro Business Guidence</span></NavLink></li>
-                        <li><NavLink to={process.env.PUBLIC_URL + "/SpiritualService"}><span className="menu-text">Spiritual Guidence</span></NavLink></li>
-                    </ul>
+                    <div className="sub-menu">
+                     <div className="services-card">
+                            <div className="services-content">
+                                <div className="links-section">
+                                    <h3 style={{color:'white'}}>Links</h3>
+                                      <div className="links-container">
+                                            <div className="column">
+                                                <ul>
+                                                    <li><NavLink to={process.env.PUBLIC_URL + "/EducationService"}>Education </NavLink></li>
+                                                    <li><NavLink to={process.env.PUBLIC_URL + "/CareerService"}>Career </NavLink></li>
+                                                </ul>
+                                            </div>
+                                            <div className="column">
+                                                <ul>
+                                                    <li><NavLink to={process.env.PUBLIC_URL + "/MicroService"}>Micro </NavLink></li>
+                                                    <li><NavLink to={process.env.PUBLIC_URL + "/SpiritualService"}>Spiritual </NavLink></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div className="images-section">
+                                    <h3 style={{color:'white'}}>Images</h3>
+                                    <div className="image-container">
+                                        <a href='#'> <img src={`${process.env.PUBLIC_URL}/images/about/about-3.jpg`} alt="Image 1" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <NavLink to={process.env.PUBLIC_URL + "/contact"}><span className="menu-text">Contact Us</span></NavLink>

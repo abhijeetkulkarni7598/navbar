@@ -1,0 +1,58 @@
+.services-card {
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    height: 300px;
+    padding: 10px;
+}
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Set flex-direction to row */
+}
+
+.links-section,
+.images-section {
+    flex: 1;
+}
+
+.images-section {
+    margin-left: 20px; /* Add margin between links and images */
+}
+
+
+
+.image-container img {
+    width: 100px; /* Adjust image width as needed */
+    height: 100px; /* Adjust image height as needed */
+    margin-right: 10px; /* Add margin between images */
+}
+
+
+
+
+.links-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the columns */
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px; /* Add a small margin between columns */
+}
+
+.column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+}
+
+/* Additional styles if needed */
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
